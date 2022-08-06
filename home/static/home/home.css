@@ -1,0 +1,459 @@
+
+.navbar {
+  
+  background-color: rgb(108, 115, 124);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0px; 
+  left: 0px;
+  width: 100%; /* Full width */
+  z-index:1
+  
+}
+
+
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #0BCA71;
+    text-align: center;
+    padding: 1px 22px;
+    text-decoration: none;
+    font-family: "Dongle";
+    font-size: 30px;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: rgb(8, 23, 42);
+    color: rgb(108, 115, 124);
+  }
+
+
+
+
+body {
+  background-color: rgb(1, 4, 9);
+  margin: 0px;
+  padding: 0px;
+  
+
+}
+
+
+
+
+
+.txt_img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left:7px ;
+  margin-right:1px;  
+  position: relative;
+  font-family: "Raleway";
+  font-size: 15px;
+  
+}
+
+  .tip1{
+    width: 160;
+    height: 140;
+    border-radius: 10px; 
+    border: 3px;
+    border-style: solid;
+    border-color: #0BCA71;
+    
+    
+
+  }
+  .tip2{
+    width: 240;
+    height: 140;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: #0BCA71;
+    
+    
+    
+
+  }
+  .tip3{
+    width: 180;
+    height: 140;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: #0BCA71;
+    
+    
+
+  }
+
+.first-txt-img {   
+  position: absolute;
+  top: 10px;
+  left: 860px;
+  
+}
+
+.first-bg {   
+  position: absolute;
+  top: 10px;
+  left: 860px;
+  
+}
+.second-txt-img {   
+  position: absolute;
+  top: 140px;
+  left: 1040px;
+  
+
+}
+.third-txt-img {   
+  position: absolute;
+  top: 10px;
+  left: 1300px;
+  
+
+}
+
+.plus {   
+  position: absolute;
+  height: 300;
+  width: 300;
+  
+  
+
+}
+
+.head_class {   
+  position: absolute;
+  z-index: 2;
+  top:220;
+  right: 30 ;
+  
+  
+}
+
+.head{
+  margin-left: auto;
+  font-size: 120px;
+  margin-right: auto;
+  text-align: center;
+  top:10;
+  z-index: 3;
+  
+  color: #067498; /*   */
+  position: absolute;  
+  left: 330px;
+}
+
+.first-txth{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+  color: #0BCA71; /*   */
+  position: absolute;
+  top: 380px;
+  left: 20px;
+  font-family: "Dongle";
+  font-size: 45px;
+  
+
+}
+
+.second-txth {
+  color: #0BCA71;
+  position: absolute;
+  top: 400px;
+  left: 600px;
+  font-family: "Dongle";
+  font-size: 70px;
+}
+
+.first-txt{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+  color: rgb(108, 115, 124); /*   */
+  position: absolute;
+  top: 10px;
+  left: 900px;
+  
+
+}
+
+.first-txtee {
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  text-align: center;  
+  color: rgb(30, 30, 30);
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  
+
+}
+
+.second-txt {
+  color: #0BCA71;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+.floater1 {
+  width: 1500px;
+  height: 300px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(108, 115, 124);
+  border-radius: 20px;
+}
+
+.floater2 {
+  width: 1500px;
+  height: 530px;
+  border-radius: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(108, 115, 124);
+}
+.floater222{
+  width: 1500px;
+  height: 450px;
+  border-radius: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(108, 115, 124);
+}
+
+
+.floater22 {
+  width: 1500px;
+  height: 530px;
+  border-radius: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(155, 10, 10);
+}
+
+.floater2222{
+  
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(108, 115, 124);
+}
+
+
+.txt_img2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left:7px ;
+  margin-right:1px;
+  position: relative;
+}
+
+.first-txt2 {
+  color: #0BCA71;
+  position: absolute;
+  top: 10px;
+  left: 140px;
+}
+
+.first-txt22 {
+  color: #0BCA71;
+  position: absolute;
+  top: 500px;
+  left: 700px;
+  z-index: 1;
+}
+
+.second-txt2 {
+  color: #0BCA71;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+.main_img {
+  
+  width: 100%;
+  height: 700px;
+  border-radius: 10px;
+  outline: 0px;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  left:0px;
+  
+  
+}
+
+
+
+
+.main {
+  text-align: center;
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  margin-left:0px ;
+  margin-right:0px;
+  position: relative;
+  z-index: 1;
+  top: 0px;
+  left:0px;
+}
+
+
+
+.mini_floater {
+  
+  display: flex; /*side2side images*/ 
+  font-family: "Raleway";
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left:7px ;
+  margin-right:1px;
+  position: relative;
+  
+}
+
+.mini_txt {
+  color: #6C737C;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+
+}
+
+.mini_txt2 {
+  color: #6C737C ;
+  position: absolute;
+  top: 10px;
+  left: 790px;
+
+}
+.minimini_txt {
+  color: #0BCA71;
+  position: absolute;
+  top: 40px;
+  left: 790px;
+
+}
+
+.minimini_txt2 {
+  color: #0BCA71;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+}
+
+.mini {
+  width: 745px;
+  height: 300px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(108, 115, 124);
+}
+
+.minii {
+  width: 745px;
+  height: 300px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(206, 52, 46);
+}
+
+
+.headeree {
+  position: relative;
+  left: -140;
+  
+}
+.header {
+  
+  position: relative;
+}
+
+.headerr {
+  z-index:2;
+  position: relative;
+}
+
+.header2 {
+  position: relative;
+  display: flex;
+}
+
+.headtxt {
+  text-align: center;
+  margin-top: 70;
+  color: #6C737C;  /*rgb(189, 209, 217) */
+}
+
+
+table, th, td {
+
+  
+  border: 2px solid #6C737C;
+   
+  
+  border-collapse: collapse;
+  font-family: "Raleway";
+  font-size: 18.7px;
+  
+  
+  
+}
+
+  
+td:hover{
+  background-color: #6C737C;
+}
+
+
+  th, td {
+
+  
+  
+  margin: -10;  
+  padding-top: 10px;
+  padding-left: 120px;
+  padding-right: 120px;
+  
+  }
+
+
+  th{
+    color: #6C737C;
+  }
+
+
+
+
+.foot {
+  color: #7DBF43;
+  font-family: "Dongle";
+  font-size: 20px;
+  line-height: 3px;
+  
+}
