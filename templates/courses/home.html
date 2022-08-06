@@ -1,0 +1,159 @@
+
+{% load static %}
+
+<html>
+    <head>
+        <title>Courses</title>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dongle">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel = "stylesheet" type="text/css" href="{% static 'courses/home.css' %}" >
+        
+    </head>
+
+
+    
+    <body>
+        
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="{% url 'login' %}">Logout</a>
+            <a href="{% url 'addc' %}">Add Course</a>
+            
+            
+        </div>
+          
+        
+        
+
+        
+        
+        <a id='Tips'></a>
+        <div class='header' >
+            
+            <h2 class='headtxt'>Courses</h2>
+            <hr style: width="30% " color='#6C737C'>
+        </div>
+       
+        
+
+        
+
+        <div class="mini_floater">
+            <div class='side2side'>
+                <img class="mini" src="{% static 'courses/blue_black.jpg' %}">
+                <h3 class="mini_txt">
+                    COL100
+            </h3>
+            <h4 class='minimini_txt'>
+                4 Credits (3-0-2)
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="{% url 'gg' %}"> Grades</a>
+                <br>
+                <br>
+                <a>Class Materials</a>
+                <br>
+                <br>
+                <a>Quizzes</a>
+                
+            </h4>
+
+            </div>
+            <div class='side2side'>
+                <img class="mini" src="{% static 'courses/blue_black.jpg' %}">
+                <h3 class="mini_txt2">
+                    COL106 Data Structures & Algorithms
+            
+            </h3>
+            <h4 class='minimini_txt2'>
+                4 Credits (3-0-2)
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="{% url 'gg' %}"> Grades</a>
+                <br>
+                <br>
+                <a>Class Materials</a>
+                <br>
+                <br>
+                <a>Quizzes</a>
+
+            </h4>
+            </div>
+
+
+              
+            
+        </div>
+        <div class="mini_floater">
+            <div class='side2side'>
+                <img class="mini" src="{% static 'courses/blue_black.jpg' %}">
+                <h3 class="mini_txt">
+                    COL202 Discrete Mathematical Structures
+            </h3>
+            <h4 class='minimini_txt'>
+                5 Credits (3-0-4)
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="{% url 'gg' %}"> Grades</a>
+                <br>
+                <br>
+                <a>Class Materials</a>
+                <br>
+                <br>
+                <a>Quizzes</a>
+            </h4>
+            </div>
+            <div class='side2side'>
+                <img class="mini" src="{% static 'courses/blue_black.jpg' %}">
+                <h3 class="mini_txt2">
+                    COL215 Digital Logic & System Design
+            
+            </h3>
+            <h4 class='minimini_txt2'>
+                4 Credits (3-1-0)
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="{% url 'gg' %}"> Grades</a>
+                <br>
+                <br>
+                <a>Class Materials</a>
+                <br>
+                <br>
+                <a>Quizzes</a>
+                
+
+                 
+            </h4>
+            </div>           
+              
+            
+        </div>
+
+        
+
+
+
+
+
+
+
+        
+
+    </body>
+    <footer class='foot'>
+        Student Details:
+       <p>Name  : {{user.get_username}}</p>
+        <p>Email: {{user.get_username}}0987@ee.iitd.in</p> 
+                    
+    </footer>
+
+</html>

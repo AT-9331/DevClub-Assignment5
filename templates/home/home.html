@@ -1,0 +1,301 @@
+
+{% load static %}
+
+<html>
+    <head>
+        <title>Homepage</title>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dongle">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel = "stylesheet" type="text/css" href="{% static 'home/home.css' %}" >
+        
+    </head>
+
+
+    
+    <body>
+        
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="https://en.wikipedia.org/wiki/Django_(web_framework)">About</a>
+            
+            
+        </div>
+          
+        
+        
+
+        <div class="main" id='home'>
+            <img class="main_img" src="{% static 'home/mainbg.jpg' %}">
+            
+            <h1 class='head'>
+                Django LMS
+                <a class="head_class" >
+                    <!--
+                    <img class='floater2222'  src="https://static.vecteezy.com/system/resources/previews/002/441/811/non_2x/abstract-3d-blue-cube-box-on-dark-background-vector.jpg">
+                    -->
+                </a>
+                
+                <div class='headeree'>     
+                <hr style: width="137% "  color='#6C737C'>
+                </div>
+
+            </h1>
+
+            
+            <div class='headerr' >         
+            
+            <hr style: width="75% " color='#6C737C'>
+            </div>
+
+            
+
+            <h1 class="first-txth">
+                   
+
+
+                
+            </h1>
+            
+            <h1 class="first-txt22">
+                <a rel="noopener" target="_blank" href="{% url 'login' %}" style="background-color: #1F7F4C; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; padding: 14px 20px; color: #ffffff; border-radius: 5px; display: inline-block; ">
+                
+                    <span >LOGIN &rarr;</span>
+                    
+                </a>
+                
+            </h1>
+        </div>
+<!--        
+        <a id='Tips'></a>
+        <div class='header' >
+            
+            <h2 class='headtxt'>Tips</h2>
+            <hr style: width="30% " color='#6C737C'>
+        </div>
+       
+        <div class="txt_img">
+            <img class="floater1" src="{% static 'home/blue_black.jpg' %}">
+            
+            <a class="first-txt-img" >
+                <img class='tip1' src='https://www.hopkinsmedicine.org/-images/health/1_-conditions/coronavirus/web2006077_sw_coronavirus-july-4th-icons202.ashx?h=335&iar=0&mh=360&mw=520&w=335&hash=EEE658A4AD3392C359454399B0206E2E'>
+            <a class='second-txt-img'> 
+                <img class='tip2' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyxpVftulelBuvfyNUe8x-mT3-yfj-E-GuGwzS0-f3VvkoZEy0BeuzUAUNa51kISeJZRQ&usqp=CAU'>
+            </a>
+            <a class='third-txt-img'>
+                   <img class='tip3' src='data:image/png;base64,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'>
+            </a>
+              
+            <h3 class="second-txt" >
+                <li>Maintain a safe distance from others (at least 1 metre), even if they don’t appear to be sick.</li>
+                 <li>Wear a mask in public, especially indoors or when physical distancing is not possible.</li>
+                <li> Choose open, well-ventilated spaces over closed ones. Open a window if indoors.</li>
+                <li> Clean your hands often. Use soap and water, or an alcohol-based hand rub.</li>
+                <li>Get vaccinated when it’s your turn. Follow local guidance about vaccination.</li>
+                <li>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</li>
+                <li>Stay home if you feel unwell.</li>
+                
+            </h3>
+        </div>
+        
+
+
+        <a id='symptoms'></a>
+        <div class='header' >
+            
+            <h2 class='headtxt'>Symptoms</h2>
+            <hr style: width="30% " color='#6C737C'>
+        </div>
+
+
+
+        <div class="txt_img2">
+            <img class="floater222" src="{% static 'home/blue_black.jpg' %}">
+            <h2 class="first-txt2">
+                <table class='first-txt2'>
+                    <tr>
+                    <th>Symptom </th>
+                    <th>Severity</th>
+                    <th>Advice</th>
+                    </tr>
+                    <tr>
+                    <td>Fever</td>
+                    <td>Mild</td>
+                    <td >Drink&nbsp;plenty of fluids, particularly&nbsp;water.</td>
+                    </tr>
+                    <tr>
+                    <td>Cold</td>
+                    <td>Mild</td>
+                    <td>Drink plenty of fluids, particularly water.</td>
+                    </tr>
+                    <tr>
+                    <td>Cough</td>
+                    <td>Mild</td>
+                    <td>Drink plenty of fluids, particularly water.</td>
+                    </tr>
+                    <tr>
+                    <td>Tiredness</td>
+                    <td>Mild</td>
+                    <td>Drink plenty of fluids, particularly water.</td>
+                    </tr>
+                    
+                  </table>
+            
+            </h2>
+              
+            
+        </div>
+
+        <a id='FAQs'></a>
+        <div class='header' >
+            
+            <h2 class='headtxt'>FAQs</h2>
+            <hr style: width="30% " color='#6C737C'>
+        </div>
+
+        <div class="mini_floater">
+            <div class='side2side'>
+                <img class="mini" src="{% static 'home/blue_black.jpg' %}">
+                <h3 class="mini_txt">
+                    What is COVID-19?
+            </h3>
+            <h4 class='minimini_txt'>
+                Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.
+                
+            </h4>
+
+            </div>
+            <div class='side2side'>
+                <img class="mini" src="{% static 'home/blue_black.jpg' %}">
+                <h3 class="mini_txt2">
+                    Should I use soap and water or hand sanitizer to protect myself?
+            
+            </h3>
+            <h4 class='minimini_txt2'>
+                COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild<br>
+                 symptoms, but some people can become severely ill. Although most people with COVID-19 get better <br>
+                 within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are <br>
+                 a wide range of new, returning, or ongoing health problems people can experience more than four <br>
+                 weeks after first being infected with the virus that causes COVID-19. Older people and those who <br>
+                  have certain underlying medical conditions are more likely to get severely ill from COVID-19.<br>
+                   Vaccines against COVID-19 are safe and effective.
+            </h4>
+            </div>
+
+
+              
+            
+        </div>
+        <div class="mini_floater">
+            <div class='side2side'>
+                <img class="mini" src="{% static 'home/blue_black.jpg' %}">
+                <h3 class="mini_txt">
+                    What are the symptoms and complications that COVID-19 can cause?
+            </h3>
+            <h4 class='minimini_txt'>
+                It is a new variant of SARS-CoV-2 that has recently been reported from South
+                Africa on 24th Nov 2021 called as B.1.1.529 or Omicron (based on Greek
+                alphabets like alpha, beta, delta etc). This variant has shown a very large
+                number of mutations, especially more than 30 on the spike protein, which
+                is the key target of the immune response.
+                Given the collection of mutations in Omicron, which earlier individually have
+                been associated with increased infectivity and immune evasion, and the
+                sudden rise in number of positive cases in South Africa, World Health
+                Organization has declared Omicron as a Variant of Concern (VoC). 
+            </h4>
+            </div>
+            <div class='side2side'>
+                <img class="mini" src="{% static 'home/blue_black.jpg' %}">
+                <h3 class="mini_txt2">
+                    What is Omicron and what makes it a variant of concern (VoC)?
+            
+            </h3>
+            <h4 class='minimini_txt2'>
+                People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe<br> 
+                illness. Symptoms may appear 2-14 days after exposure to the virus. <br>
+                If you have fever, cough, or other symptoms, you might have COVID-19.
+
+                 
+            </h4>
+            </div>           
+              
+            
+        </div>
+
+        <a id='yt'></a>
+        <div class='header' >
+            
+            <h2 class='headtxt'>YouTube</h2>
+            <hr style: width="30% " color='#6C737C'>
+        </div>
+
+        <div class="mini_floater">
+            
+            <div class='side2side'>
+                <img class="mini" src="{% static 'home/blue_black.jpg' %}">
+                <h3 class='mini_txt'>
+                     
+                    <iframe width="560" height="260"  src="https://www.youtube.com/embed/7piZ1wrugqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style= border-radius:10px ></iframe>
+                </h3>
+                
+                    
+            
+            </div>
+            <div class='side2side'>
+                <img class="mini" src="{% static 'home/blue_black.jpg' %}">
+                <h3 class="mini_txt2">
+                    <iframe width="560" height="260" src="https://www.youtube.com/embed/oqFn6AHoJZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style= border-radius:10px></iframe>
+                    
+                    
+            </h3>
+            
+            </div>
+            </div>
+            
+            
+            <a id='ns'></a>
+        <div class='header' >
+            
+            <h2 class='headtxt'>Statistics</h2>
+            <hr style: width="30% " color='#6C737C'>
+        </div>
+            <div class="txt_img2">
+                <img class="floater22" src="{% static 'home/blue_black.jpg' %}">
+                <h2 class="first-txt2">
+                    <iframe  src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="1200"  height="460" style= border-radius:10px ></iframe>
+                    
+                
+                </h2>
+                  
+                
+            </div>
+            
+        
+        
+        
+
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+        -->
+
+    </body>
+    <footer class='foot'>
+       <p>Name: Akshar Tripathi</p>
+        <p>Email: ee1210980@ee.iitd.in</p> 
+        <p>Github: AT-9331</p>               
+    </footer>
+
+</html>

@@ -1,0 +1,29 @@
+<html>
+  <head>
+
+  </head>
+  <body style="background: rgb(29, 36, 45);">
+<centre>
+<h2 style="width: 400px;
+color: white;
+padding: 10% 0 0;
+margin: auto;">Log In</h2>
+<form  style="position: relative;
+z-index: 1;
+background: #067498;
+max-width: 360px;
+margin: 0 auto 100px;
+padding: 45px;
+text-align: center;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Log In</button>
+</form>
+
+
+</centre>
+</body>
+
+</html>
