@@ -1,7 +1,7 @@
-"""DevClubLMS URL Configuration
+"""dev URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.0/topics/http/urls/
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -14,8 +14,20 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path , include
+
+from grades import views as gview
+from home import views as hview
+from courses import views as cview
+from users import views as cc
+
 
 urlpatterns = [
+    
     path('admin/', admin.site.urls),
+    path('grades/',gview.grades , name = 'gg'),
+    path('accounts/', include("django.contrib.auth.urls")),
+    path('profile/' , cview.show),    
+    path('addcourse/' , cc.course , name = 'addc'),
+    path('' , hview.show )
 ]
